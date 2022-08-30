@@ -1,4 +1,4 @@
-#calcolo del modo in cui ottenere la vittoria a NIM dopo il primo movimento dell'avversario
+#evaluate the first move(s) capable of placing the other player in a following position
 
 def is_winning(heapA, heapB, depth):
     """ If every move done here leads to a winning position for the other player, this is a losing position for
