@@ -1,4 +1,4 @@
-#calcolo della probabilità di accedere ad una determinata casella partendo dal centro e muovendosi in quattro direzioni
+#probability calculus to determine the chances of ending on a cell after four moves in a randommised direction with the central cell as the starting point
 
 n = 4 #number of steps
 m=n*2 +1 +2 #enable steps in all directions plus one spare (m = 11)
