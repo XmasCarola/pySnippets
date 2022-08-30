@@ -1,4 +1,4 @@
-#probability calculus to determine the chances of ending on a cell after four moves in a randommised direction with the central cell as the starting point
+#probability calculus to determine the chances of ending on a cell after four moves in a randomised direction with the central cell as the starting point
 
 n = 4 #number of steps
 m=n*2 +1 +2 #enable steps in all directions plus one spare (m = 11)
