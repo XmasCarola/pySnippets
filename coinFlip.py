@@ -1,11 +1,17 @@
+#coin flip result computation after 100 games in which two players have one in a hundred chance of winning each flip.
+
 import random as rd
 
-player1 = ['T']
-player2 = ['T']
+player1 = []
+player2 = []
+n = rd.randint(0, 99)
+m = rd.randint(0, 99)
 
-for i in range(99):
-    player1.append('H')
-    player2.append('H')
+for i in range(100):
+    if(i == n): player1.append('T')
+    else: player1.append('H')
+    if(i == m): player2.append('T')
+    else: player2.append('H')
 
 W1 = 0
 W2 = 0
@@ -27,17 +33,13 @@ while n < 100:
     while True:
         t = rd.randint(0, 99)
         q = rd.randint(0, 99)
-        k = ''
-        h = ''
-        for i, x in enumerate(player1):
-            if t == i: Turn1.append(x)
-            if t == i: k = x
-        for j, y in enumerate(player2):
-            if q == j: Turn2.append(y)
-            if q == j: h = y
-        if k == 'T': Game1 += 1
-        elif h == 'T': Game2 += 1 
-        if h == 'T' or k == 'T':
+        Turn1.append(player1[t])
+        Turn2.append(player2[q])
+        if (player1[t] == 'T' and player2[q] != 'T'):
+            Game1 += 1
+            break
+        elif (player2[q] == 'T' and player1[t] != 'T'):
+            Game2 += 1
             break
     winner(Turn1, Turn2) 
     n += 1
