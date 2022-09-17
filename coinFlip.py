@@ -1,4 +1,4 @@
-#coin flip result computation after 100 games in which two players have one in a hundred chance of winning each flip.
+#coin flip result computation after 100 games in which two players have one in a hundred chance of winning each flip
 
 import random as rd
 
