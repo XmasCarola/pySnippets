@@ -1,3 +1,3 @@
 # Python snippets
 
-A set of snippets designed to solve Maths' riddles and brain teasers.
+A set of snippets, written in Python, designed to solve Maths' riddles and brain teasers.
